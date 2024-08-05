@@ -13,7 +13,7 @@ app.use("/api/v1", Router);
 app.get("/", (req, res) => {
   res.send("hello planet");
 });
-const Port =process.env.PORT
+const Port =process.env.PORT || 4000
 app.listen(process.env.PORT,() => {
   console.log(`Server running on port ${Port}`);
 });
